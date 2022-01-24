@@ -1,10 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import "../../../../styles.scss";
+// mobileS 
+@media only screen and (min-width: $mobileS) {
+  .mallets-cont--item{
+    min-height: 200px;
+    width: 200px;
+  }
+  h2{
+    margin-top: 7%;
+    font-size: 20px;
+  }
+  h6{
+    font-size: 80%;
+  }
+}
+
+// mobileM {
+@media only screen and (min-width: $mobileM) {
+}
+
+//mobileL {
+@media only screen and (min-width: $mobileL) {
+}
+
+//tablet {
+@media only screen and (min-width: $tablet) {
+  .mallets-cont--item{
+    min-height: 300px;
+    width: 250px;
+  }
+  h2{
+    margin:3%;
+    font-size: 40px;
+  }
+  h6{
+    font-size: 100%;
+  }
+}
+
+
+//desktop {
+@media only screen and (min-width: $desktop) {
+}
+
 h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 40px;
-  margin: 3%;
   font-family: 'Akaya Kanadaka', cursive;
   text-shadow: 0 0 5px rgb(255, 196, 0),0 0 10px rgb(255, 196, 0),0 0 15px black,0 0 20px black;
 }
@@ -18,7 +60,6 @@ h6 {
   text-align: center;
   margin: 0;
   //background-color: rgba(255, 255, 255, 0.308);
-  font-size: 100%;
   width: 100%;
   text-shadow: 0 0 5px black,0 0 10px black,0 0 15px black,0 0 20px black;
   font-family: 'Yusei Magic', sans-serif;
@@ -40,8 +81,7 @@ h6 {
     align-items: center;
     border-radius: 10px;
     margin: 1%;
-    min-height: 300px;
-    width: 250px;
+    
 
     &:hover {
       cursor: pointer;

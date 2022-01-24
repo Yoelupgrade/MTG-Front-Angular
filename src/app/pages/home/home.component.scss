@@ -1,38 +1,94 @@
-.globalhome{
-width:100%;
-height:67vh;
-display: flex;
-align-items:center;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-background: url(/assets/home.jpg);
-background-size:cover;
-background-position: center;
-background-attachment: fixed;
+@import "../../../styles.scss";
+@media only screen and (min-width: $mobileS) {
+  .logo-cont {
+    width: 40%;
+    margin:5%;
+  }
+  .text-container {
+      width: 80%;
+    font-size: 60%;
+  }
+  .globalhome{
+      height:67vh;
+      justify-content: space-around;
+  }
 }
 
-.logo-cont{
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding:3%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
+// mobileM {
+@media only screen and (min-width: $mobileM) {
+}
+
+//mobileL {
+@media only screen and (min-width: $mobileL) {
+    .logo-cont {
+        width: 25%;
+      }
+      .globalhome{
+          height:60vh
+      }
+}
+
+//tablet {
+@media only screen and (min-width: $tablet) {
+    .text-container {
+        width: 80%;
+      font-size: 100%;
+      margin-bottom: 5%;
+    }
+    .logo-cont {
+        width: 15%;
+      }
+      .globalhome{
+          height:100%;
+          justify-content: space-around;
+      }
+}
+
+
+//desktop {
+@media only screen and (min-width: $desktop) {
+}
+.globalhome {
+  width: 100%;
+  //height: 67vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: url(/assets/home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.logo-cont {
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 3%;
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5), 0px 0px 10px rgba(255, 0, 0, 0.5),0px 0px 10px rgba(255, 0, 0, 0.5) inset,0px 0px 10px rgba(255, 0, 0, 0.5) inset;
+ 
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
 }
 
 .text-container {
-    margin-top: 5%;
-    display: flex;
-align-items:center;
-flex-direction: column;
-justify-content: center;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
-background-color: rgba(0, 0, 0, 0.5);
-width:90%;
-border-radius: 30%;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
-p, h2{
-    width:80%;
-    padding: 3%;
-    color:white;
+p,
+h2 {
+    object-fit: contain;
+  width: 80%;
+  padding: 1%;
+  color: white;
 }

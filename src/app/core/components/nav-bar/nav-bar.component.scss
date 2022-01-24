@@ -1,3 +1,21 @@
+
+@import "../../../../styles.scss";
+// mobileS 
+@media only screen and (min-width: $mobileS) {
+  .links-container{
+    font-size: 80%;
+  }
+}
+
+
+//tablet {
+@media only screen and (min-width: $tablet) {
+  .links-container{
+    font-size: 100%;
+  }
+}
+
+
 nav {
   display: flex;
   flex-direction: column;

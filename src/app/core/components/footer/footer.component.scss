@@ -1,3 +1,36 @@
+@import "../../../../styles.scss";
+// mobileS 
+@media only screen and (min-width: $mobileS) {
+    footer{
+        height:80px;
+    }
+    h3{
+        font-size:80%;
+    }
+}
+
+// mobileM {
+@media only screen and (min-width: $mobileM) {
+}
+
+//mobileL {
+@media only screen and (min-width: $mobileL) {
+}
+
+//tablet {
+@media only screen and (min-width: $tablet) {
+    footer{
+        height: 125px;
+    }
+    h3{
+        font-size:100%;
+    }
+}
+
+//desktop {
+@media only screen and (min-width: $desktop) {
+}
+
 footer{
     display: flex;
     align-items:center;
@@ -7,7 +40,7 @@ footer{
     background-position: center;
     background-repeat: none;
     width: 100%;
-    height: 125px;
+    //height: 125px;
     position:static;
     margin-bottom:0;
     box-shadow: 0 0 10px white,0 0 15px white,0 0 10px white inset,0 0 15px white inset ;
@@ -16,6 +49,6 @@ footer{
 h3{
     object-fit: contain;
     margin-bottom:2%;
-    text-shadow: 0 0 5px rgb(255, 255, 255),0 0 10px rgb(255, 255, 255),rgb(255, 255, 255),0 0 20px rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255),0px 0px 10px rgb(255, 255, 255),0px 0px 15px rgb(255, 255, 255);
     font-weight: bold;
 }
