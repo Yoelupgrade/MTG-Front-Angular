@@ -1,0 +1,11 @@
+<nav class="navbar">
+        <div class="img-container">
+            <img src="/assets/Mtg-logo.png" alt="logo MagicCollection">
+        </div>
+        <ul class="links-container">
+            <li class="links-container--item" *ngFor="let link of navBar">
+                <a class="links-container--item--link" routerLink="{{link.link}}">{{link.name}}</a>
+            </li>
+        </ul>
+
+</nav>

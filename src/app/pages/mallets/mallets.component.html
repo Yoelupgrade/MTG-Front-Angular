@@ -1,0 +1,7 @@
+<h2>MAZOS</h2>
+<div *ngIf="mallets.length" class="mallets-cont">
+    <div *ngFor="let mallet of mallets" class="mallets-cont--item" routerLink="{{mallet._id}}"
+    [ngClass]="mallet._id === '61ec2d75a2910d9317acf46a' ? 'mallets-cont--item--elf': mallet._id === '61ec2d75a2910d9317acf46b' ? 'mallets-cont--item--cleri':'61ec2d75a2910d9317acf46c'">
+        <h6>{{mallet.name}}</h6>
+    </div>
+</div>

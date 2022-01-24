@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url(/assets/fondo-card.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$tablet: 450px;
+$desktop: 1024px;
+$large: 1440px;
+
+// mobileS 
+  @media only screen and (min-width: $mobileS) {
+  }
+
+// mobileM {
+  @media only screen and (min-width: $mobileM) {
+  }
+
+//mobileL {
+  @media only screen and (min-width: $mobileL) {
+  }
+
+//tablet {
+  @media only screen and (min-width: $tablet) {
+  }
+
+
+//desktop {
+  @media only screen and (min-width: $desktop) {
+  }
+
+
+//large {
+  @media only screen and (min-width: $large) {
+  }
+

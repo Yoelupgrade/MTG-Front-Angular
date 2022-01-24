@@ -1,0 +1,57 @@
+@import "../../../styles.scss";
+
+.global-container{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.divImg{
+    object-fit: contain;
+    display: flex;
+    align-items:center;
+    //width:50%;
+    
+    @media only screen and (min-width: $mobileS) {
+        height: 270px;
+        margin-top: 12%;
+        margin-bottom: 12%;
+      }
+      @media only screen and (min-width: $mobileL) {
+        height: 400px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+    img{
+        object-fit: contain;
+        height:100%;
+    }
+    margin-top: 5%;
+    margin-bottom: 5%; 
+}
+
+@media only screen and (min-width: $mobileS) {
+    .divP{
+        width:95%;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+  }
+  @media only screen and (min-width: $mobileL) {
+    .divP{
+        width:25%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+  }
+
+.divP{
+    object-fit: contain;
+    text-justify: distribute;
+    font-weight: bold;
+}

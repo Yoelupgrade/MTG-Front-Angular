@@ -1,0 +1,14 @@
+ <div class="global">
+ <div *ngIf="card" class="card-container" > <!--[ngClass]="card.manna_cost || card.abilities == card.abilities ? 'card-container--green':'card-container--white'" -->
+    <div class="card-container--card">
+        <h2>{{ card.name }}</h2>
+        <p>Coste de mana: {{card.manna_cost}}</p>
+        <p>Tipo: {{card.types}}</p>
+        <p>Habilidad: {{card.abilities}}</p>
+        <p>Fuerza/Resitencia: {{card.forceAndResistance}}</p> 
+    </div>
+    <div class="card-container--img">
+        <img src="{{card.img_card}}" alt="Imagen de  la carta de {{card.name}}">
+    </div>
+</div>
+</div>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+.mallet-cont{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    text-align: center;
+    border-radius:15px;
+
+    &--mallet{
+        object-fit: contain;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content:flex-end;
+        width: 50%;
+        height: 100%;
+        margin-top:20%;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        padding:2%;
+        font-weight: bold;
+        border-radius: 15px;
+        box-shadow:0 0 10px rgba(199, 0, 0, 0.61),0 0 15px rgb(199, 0, 0,0.61),0 0 10px rgb(199, 0, 0,0.61) inset,0 0 15px rgba(199, 0, 0, 0.61) inset ;
+        background-color: rgba(199, 0, 0, 0.301);
+        text-shadow: 0 0 5px rgb(255, 255, 255),0 0 10px rgb(255, 255, 255),0 0 15px rgb(255, 255, 255);
+        &--green {
+            box-shadow:0 0 10px rgb(6, 184, 0,0.61),0 0 15px rgb(6, 184, 0,0.61),0 0 10px rgb(6, 184, 0,0.61) inset,0 0 15px rgba(6, 184, 0, 0.61) inset ;
+            background-color: rgba(6, 184, 0, 0.301);
+          }
+          &--white {
+            box-shadow:0 0 10px rgba(250, 250, 250, 0.61),0 0 15px rgb(250, 250, 250,0.61),0 0 10px rgb(250, 250, 250,0.61) inset,0 0 15px rgba(250, 250, 250, 0.61) inset ;
+            background-color: rgba(250, 250, 250, 0.301);
+          }
+    }
+    background-size: cover;
+    background-position: center;
+    background-image: url(/assets/trasgos.jpg);
+    &--mallet--elf {
+        background-image: url(/assets/elfo-mazo.jpg);
+      }
+    &--mallet--cleri {
+        background-image: url(/assets/clerigos.jpg);
+    }
+
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin: 3%;
+    font-family: 'Akaya Kanadaka', cursive;
+    text-shadow: 0 0 5px rgb(255, 196, 0),0 0 10px rgb(255, 196, 0),0 0 15px black,0 0 20px black;
+  }
+  
+  h6 {
+    object-fit: contain;
+    padding: 10px;
+    margin: 80px;
+    color: rgb(255, 196, 0);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.308);
+    font-size: 100%;
+    width: 100%;
+    text-shadow: 0 0 5px black,0 0 10px black,0 0 15px black,0 0 20px black;
+  font-family: 'Yusei Magic', sans-serif;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-right: 3%;
+  
+    &--card {
+      display: flex;
+      align-items: flex-end;
+      //border: solid 2px goldenrod;
+      border-top: 1px solid #fff;
+      border-right: 1px solid #f5f5f5;
+      border-bottom: 1px solid #d5d5d5;
+      border-left: 1px solid #f5f5f5;
+      border-radius: 10px;
+      margin: 2%;
+      height: 200px;
+      width: 28%;
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  

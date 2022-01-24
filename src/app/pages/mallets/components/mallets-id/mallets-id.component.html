@@ -1,0 +1,22 @@
+<div *ngIf="mallet" class="mallet-cont"
+[ngClass]="mallet._id === '61ec2d75a2910d9317acf46a' ? 'mallet-cont--mallet--elf': mallet._id === '61ec2d75a2910d9317acf46b' ? 'mallet-cont--mallet--cleri':'61ec2d75a2910d9317acf46c'">
+    <div class="mallet-cont--mallet"
+    [ngClass]="mallet._id === '61ec2d75a2910d9317acf46a' ? 'mallet-cont--mallet--green': mallet._id === '61ec2d75a2910d9317acf46b' ? 'mallet-cont--mallet--white':'61ec2d75a2910d9317acf46c'">
+      <h1>{{ mallet.name }}</h1>
+      <p>Color: {{ mallet.color}}</p>
+      <p>Tipo: {{ mallet.type}}</p>
+      <p>Formato de juego: {{ mallet.format_game}}</p>
+    </div>
+</div>
+<h2>Cartas:</h2>
+      <div *ngIf="mallet.card" class="cards-container"> 
+        <div *ngFor="let card of mallet.card" class="cards-container--card" style="background-image: url({{card.img}}); background-size: cover; background-position: center" routerLink="{{card._id}}" >
+            <h6>{{card.name}}</h6>
+        </div>
+      </div>
+<h2>Banquillo:</h2>
+      <div *ngIf="mallet.dock" class="cards-container">
+        <div *ngFor="let card of mallet.dock" class="cards-container--card" style="background-image: url({{card.img}}); background-size: cover; background-position: center" routerLink="{{card._id}}" >
+            <h6>{{card.name}}</h6>
+        </div>
+      </div>

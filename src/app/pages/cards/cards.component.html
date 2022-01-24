@@ -1,0 +1,9 @@
+<div class="fondo">
+<h2>cartas</h2>
+<div *ngIf="cards.length" class="cards-container">
+    <div *ngFor="let card of cards" class="cards-container--card" style="background-image: url({{card.img}}); background-size: cover; background-position: center" routerLink="{{card._id}}" >
+        <h6>{{card.name}}</h6>
+    </div>
+</div>
+</div>
+

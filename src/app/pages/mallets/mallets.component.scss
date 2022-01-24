@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  margin: 3%;
+  font-family: 'Akaya Kanadaka', cursive;
+  text-shadow: 0 0 5px rgb(255, 196, 0),0 0 10px rgb(255, 196, 0),0 0 15px black,0 0 20px black;
+}
+
+h6 {
+  object-fit: contain;
+  padding: 10px;
+  margin: 80px;
+  color: rgb(255, 196, 0);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  //background-color: rgba(255, 255, 255, 0.308);
+  font-size: 100%;
+  width: 100%;
+  text-shadow: 0 0 5px black,0 0 10px black,0 0 15px black,0 0 20px black;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.mallets-cont {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding:9%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  &--item {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1%;
+    min-height: 300px;
+    width: 250px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &--elf {
+      background-image: url(/assets/mazo_elfos.png);
+      filter: drop-shadow(0px 0px 10px #13a300);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &--cleri {
+      background-image: url(/assets/caja_mazo.png);
+      filter: drop-shadow(0px 0px 10px #e9be00);
+    }
+    background-size: cover;
+    background-position: center;
+    background-image: url(/assets/mazo_trasgos.png);
+    filter: drop-shadow(0px 0px 10px #bd0000);
+  }
+}
