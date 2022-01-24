@@ -30,29 +30,29 @@ $tablet: 450px;
 $desktop: 1024px;
 $large: 1440px;
 
-// mobileS 
+
   @media only screen and (min-width: $mobileS) {
   }
 
-// mobileM {
+
   @media only screen and (min-width: $mobileM) {
   }
 
-//mobileL {
+
   @media only screen and (min-width: $mobileL) {
   }
 
-//tablet {
+
   @media only screen and (min-width: $tablet) {
   }
 
 
-//desktop {
+
   @media only screen and (min-width: $desktop) {
   }
 
 
-//large {
+
   @media only screen and (min-width: $large) {
   }
 

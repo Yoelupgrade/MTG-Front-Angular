@@ -1,5 +1,5 @@
 @import "../../../../../styles.scss";
-// mobileS 
+
 @media only screen and (min-width: $mobileS) {
     .card-container{
         width: 70%;
@@ -16,7 +16,7 @@
 }
 
 
-//tablet {
+
 @media only screen and (min-width: $tablet) {
     .card-container{
         width: 60%;
