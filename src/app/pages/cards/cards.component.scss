@@ -9,7 +9,11 @@
   &--card{
     height: 120px;
     width: 150px;
-    margin: 1%;
+    margin: 1.5%;
+    &:hover{
+      height: 130px;
+    width: 160px;
+    }
   }
 }
   h2{
@@ -27,6 +31,10 @@
     height: 180px;
     width: 250px;
     margin: 2%;
+    &:hover{
+      height: 190px;
+    width: 260px;
+    }
   }
   h2{
     margin:3%;
@@ -66,8 +74,8 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
 
   &--card {
     display: flex;
@@ -80,6 +88,9 @@ h6 {
     
     &:hover {
       cursor: pointer;
+      transition: 0.5s;
+      box-shadow: 0 0 5px rgb(2, 175, 2),0 0 10px rgb(255, 255, 255),0 0 15px rgb(255, 255, 255),0 0 20px rgb(255, 255, 255);
+
     }
   }
 }
