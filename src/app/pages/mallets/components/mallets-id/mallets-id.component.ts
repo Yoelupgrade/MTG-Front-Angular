@@ -1,7 +1,6 @@
 import { Imallets } from './../../../../shared/models/sharedpages';
 import { Component, OnInit } from '@angular/core';
 import { MalletsService } from 'src/app/shared/services/mallets-service/mallets.service';
-import { CardsService } from 'src/app/shared/services/card-service/cards.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
