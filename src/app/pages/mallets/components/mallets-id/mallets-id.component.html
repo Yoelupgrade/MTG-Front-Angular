@@ -10,13 +10,13 @@
 </div>
 <h2>Cartas:</h2>
       <div *ngIf="mallet.card" class="cards-container"> 
-        <div *ngFor="let card of mallet.card" class="cards-container--card" style="background-image: url({{card.img}}); background-size: cover; background-position: center" routerLink="{{card._id}}" >
+        <div *ngFor="let card of mallet.card" class="cards-container--card" style="background-image: url({{card.img}}); background-size: cover; background-position: center"> <!--routerLink="{{card._id}}"-->
             <h6>{{card.name}}</h6>
         </div>
       </div>
 <h2>Banquillo:</h2>
       <div *ngIf="mallet.dock" class="cards-container">
-        <div *ngFor="let card of mallet.dock" class="cards-container--card" style="background-image: url({{card.img}}); background-size: cover; background-position: center" routerLink="{{card._id}}" >
+       <div *ngFor="let card of mallet.dock" class="cards-container--card" style="background-image: url({{card.img}}); background-size: cover; background-position: center" > <!-- routerLink="{{card._id}}" -->
             <h6>{{card.name}}</h6>
         </div>
       </div>
