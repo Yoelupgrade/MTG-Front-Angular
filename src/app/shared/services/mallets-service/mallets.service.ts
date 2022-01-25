@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 })
 export class MalletsService {
   public malletsUrl: string = "https://api-magic-library.vercel.app/api/mallets";
-  public cardsUrl: string = "https://api-magic-library.vercel.app/api/cards"
   constructor(private httpClient: HttpClient) { }
 
   public getAllmallets(){
@@ -15,7 +14,4 @@ export class MalletsService {
   public getMallet(idMallet: any) {
     return this.httpClient.get(`${this.malletsUrl}/${idMallet}`)
   }
-  public getCard(idCard: any) {
-    return this.httpClient.get(`${this.cardsUrl}/${idCard}`)
-}
 }
