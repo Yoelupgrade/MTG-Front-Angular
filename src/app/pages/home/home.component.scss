@@ -2,14 +2,14 @@
 @media only screen and (min-width: $mobileS) {
   .logo-cont {
     width: 40%;
-    margin:5%;
+    margin:3%;
   }
   .text-container {
       width: 80%;
     font-size: 60%;
   }
   .globalhome{
-      min-height:69vh;
+      min-height:72vh;
       max-height: 100vh;
       justify-content: space-around;
   }
@@ -21,7 +21,7 @@
         width: 25%;
       }
       .globalhome{
-          height:60vh;
+          min-height:75.7vh;
       }
 }
 
@@ -33,13 +33,32 @@
       margin-bottom: 5%;
     }
     .logo-cont {
-        width: 15%;
+        width: 10%;
+        margin:2%;
       }
       .globalhome{
           min-height:67vh;
           justify-content: space-around;
       }
 }
+
+@media only screen and (min-width: $large) {
+  .logo-cont {
+    width: 10%;
+    margin:0;
+  }
+
+  .text-container {
+      width: 80%;
+      margin:0;
+  }
+
+  .globalhome{
+      min-height:60vh;
+      justify-content: space-around;
+  }
+}
+  
 
 .globalhome {
   width: 100%;
@@ -73,7 +92,7 @@
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.603);
   border-radius: 10px;
 }
 

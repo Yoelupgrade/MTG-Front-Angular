@@ -32,6 +32,6 @@ export class AppComponent {
         alt: "logo png magic manas"
       },
       creator: "Yoel Arenas",
-      from: "Mis Proyectos"
+      from: "Upgrade Hub"
   }
 }
